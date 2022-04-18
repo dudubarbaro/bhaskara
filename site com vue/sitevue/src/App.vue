@@ -1,14 +1,18 @@
 <script>
   import MenuLateral from "@/components/MenuLateral.vue"
+  import BlocoContent from "@/components/BlocoContent.vue"
+  import BlocoFooter from "@/components/BlocoFooter.vue"
+  import BlocoHeader from "@/components/BlocoHeader.vue";
   export default {
-    components: { MenuLateral },
+    components: { MenuLateral, BlocoContent, BlocoFooter, BlocoHeader },
   };
 </script>
 
 <template>
-  <MenuLteral />
-  <header class="header">Cabeçalho</header>
-  <main class="content">Principal</main>
-  <footer class="footer">Rodapé</footer>
+  <MenuLateral />
+  <BlocoContent />
+  <BlocoFooter />
+  <BlocoHeader />
+
 </template>
 <style></style>
